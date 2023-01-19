@@ -1,0 +1,118 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 150%;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    align-items: center;
+    border: solid lightgray 5px;
+    justify-content: space-between;
+}
+.ejercicio{
+    display: flex;
+    align-items: center;
+}
+header h2{
+    font-weight: 600;
+}
+main{
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+}
+.left{
+   margin-right: 10%;
+}
+#texto{
+    font-weight: 600;
+    resize: none;
+}
+#texto_resultado{
+   background: lightgray;
+   background-image: url(img/loading.gif);
+   border: none;
+   border-radius: 12px;
+   background-repeat:no-repeat;
+   font-weight: 600;
+   resize: none;
+   box-shadow: 5px 5px 5px black;
+}
+.danger{
+    display: flex;
+    align-items: center;
+}
+.danger p{
+    font-size: 19px;
+    color: rgb(0, 132, 255);
+    font-weight: 600;
+    margin-left: 10px;
+}
+.botones{
+    margin-top: 5px;
+}
+.prueba{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    cursor: pointer;
+}
+.boton-copiar{
+    padding-left: 70px;
+}
+
+#encriptar{
+    background-color: #0a5cb8;
+    font-weight: 600;
+    color: white;
+    border: solid black 3px;
+    padding: 10px;
+    transition: background-color .5s;
+}
+#encriptar:hover{
+    background-color: #2C3E50;
+}
+#desencriptar{
+    background-color: #929292;
+    font-weight: 600;
+    color: white;
+    border: solid black 3px;
+    padding: 10px;
+    transition: background-color .5s;
+}
+#desencriptar:hover{
+    background-color: #2C3E50;
+}
+#copiar{
+    background-color: #0a5cb8;
+    font-weight: 600;
+    color: white;
+    border: solid black 3px;
+    padding: 10px;
+    transition: background-color .5s;
+}
+#copiar:hover{
+    background-color: #2C3E50;
+}
+footer{
+    border: solid lightgray 5px;
+    background-color: #EAECEE;
+    margin-top: 8px;
+    padding-bottom: 3%;
+    display: flex;
+    justify-content: center;
+  
+}
+footer p{
+    font-weight: 600;
+    font-size: 25px;
+    font-style: italic;
+    transition: color 1s;
+}
+footer p:hover{
+    color: #0a5cb8;
+}

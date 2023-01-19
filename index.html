@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="shortcut icon" href="img/LogoIndex.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="ejercicio">
+            <img src="img/LogoIndex.jpg" alt="logoPag" class="logo" width="150px">
+            <h2>Encriptador/Desencriptador de textos</h2>
+        </div>
+        <div class="alura">
+            <img src="img/Logo.png" alt="alura">
+        </div>
+    </header>
+    <main>
+        <section class="left">
+            <textarea style="border: none;" id="texto" cols="40" rows="10"
+                placeholder="Ingrese el texto aquí"></textarea>
+            <div class="danger">
+                <img src="img/Aviso.png" alt="aviso">
+                <p>Sólo letras sin acentos y sin caracteres especiales.</p>
+            </div>
+            <div class="botones">
+                <input class="prueba" type="button" value="Encriptar" id="encriptar"  onclick="encriptar()">
+                <input class="prueba" type="button" value="Desencriptar" id="desencriptar" onclick=" desencriptar()">
+            </div>
+
+        </section>
+
+        <section class="right">
+            <textarea id="texto_resultado" cols="30" rows="12" readonly ></textarea>
+            <div class="boton-copiar">
+                <input class="prueba" type="button" value="Copiar" id="copiar" onclick="copiarResultado()">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>By: Luis Jiménez | 2023</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+
+</html>
