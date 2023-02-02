@@ -3,8 +3,8 @@
     font-weight: 400;
     font-size: 25px;
     line-height: 150%;
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 header{
@@ -61,9 +61,7 @@ main{
     border-radius: 24px;
     cursor: pointer;
 }
-.boton-copiar{
-    padding-left: 70px;
-}
+
 
 #encriptar{
     background-color: #0a5cb8;
@@ -115,4 +113,35 @@ footer p{
 }
 footer p:hover{
     color: #0a5cb8;
+}
+
+@media screen and (max-width:480px){
+    header{
+        width: auto;
+    }
+    header h2{
+        font-size: 15px;
+        text-align: center;
+    }
+    .logo, .alura img{
+        width: 75px;
+    }
+    main{
+        display: block;
+        padding: 15px;
+        text-align: center;
+    }
+    .danger p{
+        text-align: center;
+        font-size: 15px;
+    }
+    .prueba{
+        margin-top: 5px;
+    }
+    #texto, #texto_resultado{
+        width: 90%;
+    }
+    #texto_resultado{
+        margin-top: 10px;
+    }
 }
